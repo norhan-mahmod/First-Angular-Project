@@ -1,0 +1,15 @@
+section{
+    --main-color: #2c3e50;
+    --second-color: #1abc9c;
+}
+div.line{
+    height: 4px;
+    background-color: var(--main-color);
+}
+div.head-line{
+    color: var(--main-color);
+}
+/*form section*/
+form button{
+    background-color: var(--second-color);
+}

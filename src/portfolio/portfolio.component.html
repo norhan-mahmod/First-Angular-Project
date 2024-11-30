@@ -1,0 +1,86 @@
+<section class="overflow-hidden py-5 position-relative">
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center align-items-center align-content-center">
+            <div class="col-5">
+                <div class="head-color text-center">
+                    <h2 class="fw-bold fs-1">PORTFOLIO COMPONENT</h2>
+                    <div class="d-flex justify-content-center align-items-center my-3">
+                        <div class="w-25 d-inline-block line"></div>
+                        <i class="fa-solid fa-star px-3"></i>
+                        <div class="w-25 d-inline-block line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-3 g-2">
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0"  (click)="showCard($event , './assets/images/poert1.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/poert1.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0" (click)="showCard($event ,'./assets/images/port2.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/port2.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0" (click)="showCard($event , './assets/images/port3.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/port3.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0" (click)="showCard($event , './assets/images/poert1.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/poert1.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0" (click)="showCard($event , './assets/images/port2.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/port2.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-layer p-2">
+                <div class="item rounded-2 position-relative overflow-hidden p-0" (click)="showCard($event , './assets/images/port3.png')">
+                    <div class="item-img w-100">
+                        <img src="./assets/images/port3.png" class="w-100 rounded-2" alt="">
+                    </div>
+                    <div class="item-layer position-absolute top-0 start-0 bottom-0 end-0 text-white d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="pop-up container-fluid position-absolute top-0 start-0 end-0 bottom-0" [class.d-none]="hideCard">
+        <div class="row vh-100 align-items-center justify-content-center" (click)="closeCard($event)">
+            <div class="card col-4 p-0 border-0 rounded-3">
+                <img [src]="imagesrc" class="w-100 rounded-3" alt="test">
+            </div>
+        </div>
+    </div>
+</section>

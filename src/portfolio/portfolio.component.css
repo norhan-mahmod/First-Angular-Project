@@ -1,0 +1,26 @@
+section{
+    --main-color: #2c3e50;
+    --second-color: #1abc9c;
+}
+div.line{
+    height: 4px;
+    background-color: var(--main-color);
+}
+div.head-line{
+    color: var(--main-color);
+}
+div.item{
+    cursor: pointer;
+}
+div.item-layer{
+    background-color: var(--second-color);
+    opacity: 0;
+    transition: all 1s;
+    font-size: 70px;
+}
+div.item-layer:hover{
+    opacity: 1;
+}
+section div.pop-up{
+    background-color: rgba(128, 170, 233, 0.4);
+}

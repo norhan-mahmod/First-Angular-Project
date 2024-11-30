@@ -1,0 +1,8 @@
+footer.footer{
+    --main-color: #2c3e50;
+    --footer-color: #1a252f;
+    background-color: var(--main-color);
+}
+div.footer-info{
+    background-color: var(--footer-color);
+}

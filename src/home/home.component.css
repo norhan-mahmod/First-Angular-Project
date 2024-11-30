@@ -1,0 +1,7 @@
+section.home-section{
+    --main-color: #1abc9c;
+    background-color: var(--main-color);
+}
+div.line{
+    height: 4px;
+}
